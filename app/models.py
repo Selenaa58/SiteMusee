@@ -11,11 +11,11 @@ from django.db import models
 
 # Create your models here.
 class Parcel(models.Model):
-    tracking_number = models.CharField(max_length=16)
-    adress_dep = models.CharField(max_length=200)
-    adress_arr = models.CharField(max_length=200)
+    name_article = models.CharField(max_length=200)
+    description = models.CharField(max_length=500)
+    value = models.CharField(max_length=200)
     weight = models.IntegerField()
     status = models.IntegerField(default=0)
 
     def __str__(self):
-        return f"Colis n°{self.tracking_number}"
+        return f"Colis n°{self.name_article}"

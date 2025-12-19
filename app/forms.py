@@ -5,8 +5,8 @@ class ParcelForm(forms.ModelForm):
     class Meta:
         model = Parcel
         fields = [
-            'tracking_number', 
-            'adress_dep', 
-            'adress_arr',
+            'name_article', 
+            'description', 
+            'value',
             'weight',
         ]
