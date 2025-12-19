@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colis</title>
+</head>
+<body>
+    <h1>Il y a {{ nb_parcels }} colis :</h1> 
+
+    {% for p in parcels %}
+        <a href="/colis/{{ p.id }}">{{ p }}</a>
+    {% endfor %}
+
+    <a href="/">Revenir sur la page d'accueil</a>
+</body>
+</html>

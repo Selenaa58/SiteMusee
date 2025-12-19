@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colis</title>
+</head>
+<body>
+    <h1>Details du {{ one_parcel }}</h1> 
+
+    <p>Numero de suivi : {{ one_parcel.tracking_number }}</p>
+    <p>Adresse départ : {{ one_parcel.adress_dep }}</p>
+    <p>Adresse arrivée : {{ one_parcel.adress_arr }}</p>
+    <p>Poids : {{ one_parcel.weight }}kg</p>
+    <p>Etat de livraison : {{ one_parcel.status }}</p>
+
+    <a href="/colis">Retour à la liste des colis</a>
+</body>
+</html>
